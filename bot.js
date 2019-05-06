@@ -30,12 +30,12 @@ client.on('ready', () => {
 client.on('message', message => {
 if(message.author.bot) return;
               if(!message.channel.guild) return;
-    var prefix = "M";
+    var prefix = "+";
     if(message.content.startsWith(prefix + 'bc')) {
     if(!message.channel.guild) return message.channel.send('**الأمر بالسيرفرات بس**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**ماعندك الصلاحية المطلوبة**' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "『ζ͜͡M Bot』";
+    let copy = "『ζ͜͡Bot』";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**ترسل برودكاست فاضي؟**');message.channel.send(`**متأكد؟** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -84,4 +84,4 @@ setTimeout(() => {
 }, cdseconds * 1000)
     });
 
-client.login("NTU5ODYxNTAxNDkwNjI2NTcx.D3ueAw.hM4Y_K6DKiDWrRf3zhTuGzktSUQ");
+client.login("NTc1MDU0NjgyMDI5MDMxNDM1.XNCXrA.WKmPJkUUyFpb9Kd9qWAn1CWZ-8E");
