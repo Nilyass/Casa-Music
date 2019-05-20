@@ -52,14 +52,14 @@ if(message.author.bot) return;
     message.guild.members.forEach(m => {
     var bc = new
        Discord.RichEmbed()
-       .setColor('#00ff47')
+       .setColor('')
        .setTitle('**:incoming_envelope:رسالة:incoming_envelope:')
        .addField('**:diamond_shape_with_a_dot_inside:السيرفر:diamond_shape_with_a_dot_inside:**', message.guild.name)
        .addField('**:black_joker:المرسل:black_joker:**', message.author.username)
        .addField(':page_facing_up:الرسالة:page_facing_up:', args)
        .setThumbnail(message.author.avatarURL)
        .setFooter(copy, client.user.avatarURL);
-    m.send({ embed: bc })
+    m.send({ msg: bc })
     msg.delete();
     })
     })
