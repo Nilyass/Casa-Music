@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("6բlx | +bc",{type: 'STREAMING'})
+   client.user.setActivity("ＮＩＴＲＯ, Free",{type: 'STREAMING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -35,7 +35,7 @@ if(message.author.bot) return;
     if(!message.channel.guild) return message.channel.send('**الأمر بالسيرفرات بس**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**ماعندك الصلاحية المطلوبة**' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "『ζ͜͡Bot』";
+    let copy = "『ζ͜͡Free Nitro』";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**ترسل برودكاست فاضي؟**');message.channel.send(`**متأكد؟** \` ${args}\``).then(msg => {
     msg.react('✅')
@@ -84,4 +84,4 @@ setTimeout(() => {
 }, cdseconds * 1000)
     });
 
-client.login("NTc1ODMzMzc0OTU1MTQzMTk4.XNNs1w.780AGzsZ32ipyn1pEfs_0A9QdsU");
+client.login("NTc5ODc0MDI3NzE2MjE0Nzg1.XOIf_w.pudFv3AN2bt2R_E0CB8lLLqwQBo");
